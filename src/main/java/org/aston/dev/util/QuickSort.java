@@ -18,8 +18,8 @@ public class QuickSort {
     }
 
     private static <T> int partition(List<T> list, int from, int to, Comparator<? super T> c) {
-        int rightIndex = to;
         int leftIndex = from;
+        int rightIndex = to;
 
         T pivot = list.get(from + (to - from) / 2);
         while (leftIndex <= rightIndex) {
